@@ -56,12 +56,12 @@ export default function Navbar() {
             </svg>
             <span>Sobre Nosotros</span>
           </a>
-          <a href="#contact" className="navbar-link flex items-center space-x-2" onClick={e => handleSmoothScroll(e, 'contacto')}>
+{/*           <a href="#contact" className="navbar-link flex items-center space-x-2" onClick={e => handleSmoothScroll(e, 'contacto')}>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
             <span>Contacto</span>
-          </a>
+          </a> */}
           {/* <button className="bg-accent text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">
             Cotizar Proyecto
           </button> */}
