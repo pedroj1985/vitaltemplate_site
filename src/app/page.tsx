@@ -1,13 +1,17 @@
 
+'use client';
 import Link from "next/link";
+import React, { useState } from "react";
 
 export default function Home() {
+  const [modalKey, setModalKey] = useState<string | null>(null);
+  const closeModal = () => setModalKey(null);
   return (
     <div className="bg-background text-foreground min-h-screen flex flex-col">
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb] mt-0" id="inicio">
+        <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb] mt-0" id="home">
           <div className="container mx-auto px-6">
             <span className="inline-block mb-6 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase vital-text bg-[#eaf1fa] bg-opacity-80 border border-[#3270b3]">
               🚀 Especialistas en Next.js & React
@@ -39,28 +43,154 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Modal */}
+        {modalKey && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/50" onClick={closeModal}></div>
+            <div className="relative bg-white w-[92%] max-w-xl rounded-2xl shadow-2xl border border-[#e5e7eb] p-6 mx-4">
+              <button onClick={closeModal} aria-label="Cerrar" className="absolute top-3 right-3 text-xl leading-none">×</button>
+              {modalKey === 'landing' && (
+                <div>
+                  <h3 className="text-xl font-bold mb-2 soluciones-text font-mono">Landing Page</h3>
+                  <p className="soluciones-text font-mono mb-4">Un sitio de una sola página para presentar tu negocio, promocionar un producto o capturar leads. Ideal para campañas, profesionales independientes o startups.</p>
+                  <p className="text-sm uppercase tracking-wide font-bold mb-2 vital-text">Características</p>
+                  <ul className="list-disc pl-5 soluciones-text font-mono space-y-1">
+                    <li>Diseño limpio y directo</li>
+                    <li>Secciones clave y CTAs claras</li>
+                    <li>Formulario de contacto/newsletter</li>
+                    <li>SSG para máxima velocidad</li>
+                  </ul>
+                </div>
+              )}
+              {modalKey === 'corporativa' && (
+                <div>
+                  <h3 className="text-xl font-bold mb-2 soluciones-text font-mono">Web Corporativa</h3>
+                  <p className="soluciones-text font-mono mb-4">Multipágina: empresa, servicios, equipo y misión. Ideal para marcas y profesionales.</p>
+                  <p className="text-sm uppercase tracking-wide font-bold mb-2 vital-text">Características</p>
+                  <ul className="list-disc pl-5 soluciones-text font-mono space-y-1">
+                    <li>Inicio, Sobre, Servicios, Portafolio, Contacto</li>
+                    <li>Diseño alineado a la marca</li>
+                    <li>SEO en cada página</li>
+                    <li>Mapas, galerías y formularios</li>
+                    <li>SSG para alto rendimiento</li>
+                  </ul>
+                </div>
+              )}
+              {modalKey === 'blog' && (
+                <div>
+                  <h3 className="text-xl font-bold mb-2 soluciones-text font-mono">Blog & Contenido</h3>
+                  <p className="soluciones-text font-mono mb-4">Publicación de artículos con CMS headless y foco en SEO y rendimiento.</p>
+                  <p className="text-sm uppercase tracking-wide font-bold mb-2 vital-text">Características</p>
+                  <ul className="list-disc pl-5 soluciones-text font-mono space-y-1">
+                    <li>Inicio con últimos y destacados</li>
+                    <li>Paginación, categorías y etiquetas</li>
+                    <li>Detalle optimizado para lectura</li>
+                    <li>CMS Headless (Strapi, Contentful, Sanity)</li>
+                    <li>Búsqueda interna + ISR</li>
+                  </ul>
+                </div>
+              )}
+              {modalKey === 'ecommerce' && (
+                <div>
+                  <h3 className="text-xl font-bold mb-2 soluciones-text font-mono">E-commerce</h3>
+                  <p className="soluciones-text font-mono mb-4">Tiendas o catálogos con foco en conversión, SEO y velocidad.</p>
+                  <p className="text-sm uppercase tracking-wide font-bold mb-2 vital-text">Características</p>
+                  <ul className="list-disc pl-5 soluciones-text font-mono space-y-1">
+                    <li>Productos con SSG y SEO</li>
+                    <li>Filtros avanzados</li>
+                    <li>Carrito y checkout seguro</li>
+                    <li>Stripe, PayPal, Mercado Pago</li>
+                    <li>Shopify headless / CMS</li>
+                    <li>SSR en páginas dinámicas</li>
+                  </ul>
+                </div>
+              )}
+              {modalKey === 'saas' && (
+                <div>
+                  <h3 className="text-xl font-bold mb-2 soluciones-text font-mono">SaaS & Apps</h3>
+                  <p className="soluciones-text font-mono mb-4">Plataformas a medida con lógica compleja, tiempo real y datos a escala.</p>
+                  <p className="text-sm uppercase tracking-wide font-bold mb-2 vital-text">Características</p>
+                  <ul className="list-disc pl-5 soluciones-text font-mono space-y-1">
+                    <li>Autenticación completa</li>
+                    <li>Perfiles y roles</li>
+                    <li>Dashboards de gestión</li>
+                    <li>Integración con múltiples APIs</li>
+                    <li>Base de datos</li>
+                    <li>API Routes en Next.js</li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* Services Section */}
         <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="services">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
               <h1>Nuestros Servicios</h1>
-              <p className="text-xl soluciones-text font-mono">Creamos sitios web que realmente funcionan para tu negocio</p>
+              <p className="text-xl soluciones-text font-mono">Explora los tipos de sitio según tus objetivos</p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl shadow p-8 flex flex-col items-center border border-[#e5e7eb] hover:shadow-lg transition-shadow">
-                <div className="text-4xl mb-4 vital-text">💻</div>
-                <h3 className="text-2xl font-bold mb-2 soluciones-text font-mono">Landing Pages</h3>
-                <p className="text-base soluciones-text font-mono mb-4 text-center">Páginas ultra rápidas, optimizadas para captar clientes y posicionar tu marca.</p>
+
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-left">
+              {/* Card 1 */}
+              <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center text-center gap-4">
+                  <div className="text-4xl">🚀</div>
+                  <div>
+                    <p className="text-sm uppercase tracking-wide font-bold vital-text">Tipo de Sitio</p>
+                    <h3 className="text-base font-bold soluciones-text font-mono">Landing Page</h3>
+                  </div>
+                  <a href="#" onClick={(e) => { e.preventDefault(); setModalKey('landing'); }} className="text-sm text-[#3270b3] underline font-mono">Más</a>
+                </div>
               </div>
-              <div className="bg-white rounded-xl shadow p-8 flex flex-col items-center border border-[#e5e7eb] hover:shadow-lg transition-shadow">
-                <div className="text-4xl mb-4 vital-text">🏢</div>
-                <h3 className="text-2xl font-bold mb-2 soluciones-text font-mono">Web Corporativa</h3>
-                <p className="text-base soluciones-text font-mono mb-4 text-center">Tu empresa online con imagen profesional, responsive y autogestionable.</p>
+
+              {/* Card 2 */}
+              <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center text-center gap-4">
+                  <div className="text-4xl">🏢</div>
+                  <div>
+                    <p className="text-sm uppercase tracking-wide font-bold vital-text">Tipo de Sitio</p>
+                    <h3 className="text-base font-bold soluciones-text font-mono">Web Corporativa</h3>
+                  </div>
+                  <a href="#" onClick={(e) => { e.preventDefault(); setModalKey('corporativa'); }} className="text-sm text-[#3270b3] underline font-mono">Más</a>
+                </div>
               </div>
-              <div className="bg-white rounded-xl shadow p-8 flex flex-col items-center border border-[#e5e7eb] hover:shadow-lg transition-shadow">
-                <div className="text-4xl mb-4 vital-text">☁️</div>
-                <h3 className="text-2xl font-bold mb-2 soluciones-text font-mono">Aplicaciones SaaS</h3>
-                <p className="text-base soluciones-text font-mono mb-4 text-center">Desarrollo de plataformas y apps a medida, escalables y seguras.</p>
+
+              {/* Card 3 */}
+              <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center text-center gap-4">
+                  <div className="text-4xl">📝</div>
+                  <div>
+                    <p className="text-sm uppercase tracking-wide font-bold vital-text">Tipo de Sitio</p>
+                    <h3 className="text-base font-bold soluciones-text font-mono">Blog & Contenido</h3>
+                  </div>
+                  <a href="#" onClick={(e) => { e.preventDefault(); setModalKey('blog'); }} className="text-sm text-[#3270b3] underline font-mono">Más</a>
+                </div>
+              </div>
+
+              {/* Card 4 */}
+              <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center text-center gap-4">
+                  <div className="text-4xl">🛍️</div>
+                  <div>
+                    <p className="text-sm uppercase tracking-wide font-bold vital-text">Tipo de Sitio</p>
+                    <h3 className="text-base font-bold soluciones-text font-mono">E-commerce</h3>
+                  </div>
+                  <a href="#" onClick={(e) => { e.preventDefault(); setModalKey('ecommerce'); }} className="text-sm text-[#3270b3] underline font-mono">Más</a>
+                </div>
+              </div>
+
+              {/* Card 5 */}
+              <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center text-center gap-4">
+                  <div className="text-4xl">⚡</div>
+                  <div>
+                    <p className="text-sm uppercase tracking-wide font-bold vital-text">Tipo de Sitio</p>
+                    <h3 className="text-base font-bold soluciones-text font-mono">SaaS & Apps</h3>
+                  </div>
+                  <a href="#" onClick={(e) => { e.preventDefault(); setModalKey('saas'); }} className="text-sm text-[#3270b3] underline font-mono">Más</a>
+                </div>
               </div>
             </div>
           </div>
@@ -124,45 +254,72 @@ export default function Home() {
         <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="pricing">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h1>Planes</h1>
-              <p className="text-xl soluciones-text font-mono">Elige el plan que mejor se adapte a tu proyecto</p>
+              <h1>🧩 Planes y Precios</h1>
+              <p className="text-xl soluciones-text font-mono">Elige el plan ideal y empieza a construir</p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Plan Básico */}
-              <div className="bg-[#f5f7fa] rounded-2xl shadow-xl border-2 border-[#3270b3] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
-                <h3 className="text-2xl font-bold vital-text mb-2">Landing Básica</h3>
-                <div className="text-4xl font-extrabold mb-4 text-[#3270b3]">$1,500</div>
-                <ul className="mb-6 text-base soluciones-text text-left space-y-2">
-                  <li>✓ 1 sección scroll</li>
-                  <li>✓ Responsive y optimizada</li>
-                  <li>✓ Hosting incluido 1 año</li>
-                  <li>✓ Entrega en 7 días</li>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              {/* Plan Esencial */}
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#22c55e] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
+                <div className="text-3xl mb-2">🟢</div>
+                <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Esencial</h3>
+                <div className="text-lg mb-4 soluciones-text">$40 USD / <span className="font-bold">$10 USD</span> mensual</div>
+                <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
+                  <li>✓ Landing Page (una sola página)</li>
+                  <li>✓ Diseño responsivo y personalizado</li>
+                  <li>✓ Secciones: Inicio, Servicios, Contacto</li>
+                  <li>✓ Formulario de contacto</li>
+                  <li>✓ Generación estática (SSG)</li>
                 </ul>
-                <button className="px-6 py-3 rounded-lg font-bold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors">Solicitar</button>
+                <div className="text-sm mb-6 soluciones-text">Entrega estimada: 3-5 días</div>
+                <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#22c55e] text-[#22c55e] bg-white hover:bg-[#22c55e] hover:text-white transition-colors">Solicitar</button>
               </div>
-              {/* Plan Intermedio */}
-              <div className="bg-[#eaf1fa] rounded-2xl shadow-xl border-2 border-[#424c54] flex flex-col items-center p-8 font-mono scale-105 md:scale-110 z-10 relative hover:scale-110 transition-transform">
-                <h3 className="text-2xl font-bold vital-text mb-2">Web Corporativa</h3>
-                <div className="text-4xl font-extrabold mb-4 text-[#424c54]">$6,000</div>
-                <ul className="mb-6 text-base soluciones-text text-left space-y-2">
-                  <li>✓ Hasta 6 secciones</li>
-                  <li>✓ Panel autogestionable</li>
-                  <li>✓ Integración con CMS</li>
-                  <li>✓ Soporte 3 meses</li>
+
+              {/* Plan Profesional */}
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#3b82f6] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
+                <div className="text-3xl mb-2">🔵</div>
+                <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Profesional</h3>
+                <div className="text-lg mb-4 soluciones-text">$80 USD / <span className="font-bold">$20 USD</span> mensual</div>
+                <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
+                  <li>✓ Sitio institucional multipágina</li>
+                  <li>✓ Diseño alineado a la marca</li>
+                  <li>✓ SEO básico en cada página</li>
+                  <li>✓ Galería, mapa y formularios avanzados</li>
+                  <li>✓ Generación estática (SSG)</li>
                 </ul>
-                <button className="px-6 py-3 rounded-lg font-bold soluciones-text border-2 border-[#424c54] bg-white hover:bg-[#424c54] hover:text-white transition-colors">Solicitar</button>
+                <div className="text-sm mb-6 soluciones-text">Entrega estimada: 7-15 días</div>
+                <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#3b82f6] text-[#3b82f6] bg-white hover:bg-[#3b82f6] hover:text-white transition-colors">Solicitar</button>
               </div>
-              {/* Plan Premium */}
-              <div className="bg-[#f5f7fa] rounded-2xl shadow-xl border-2 border-[#3270b3] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
-                <h3 className="text-2xl font-bold vital-text mb-2">App SaaS / Dashboard</h3>
-                <div className="text-4xl font-extrabold mb-4 text-[#3270b3]">$18,000+</div>
-                <ul className="mb-6 text-base soluciones-text text-left space-y-2">
-                  <li>✓ Funcionalidad a medida</li>
-                  <li>✓ Escalable y segura</li>
-                  <li>✓ Integración APIs</li>
-                  <li>✓ Soporte 6 meses</li>
+
+              {/* Plan Contenido Dinámico */}
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#f59e0b] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
+                <div className="text-3xl mb-2">🟠</div>
+                <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Contenido Dinámico</h3>
+                <div className="text-lg mb-4 soluciones-text">$120 USD / <span className="font-bold">$30 USD</span> mensual</div>
+                <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
+                  <li>✓ Blog o revista digital</li>
+                  <li>✓ CMS Headless (Strapi, Sanity, etc.)</li>
+                  <li>✓ Categorías, etiquetas y búsqueda interna</li>
+                  <li>✓ Regeneración Estática Incremental (ISR)</li>
+                  <li>✓ Panel de administración</li>
                 </ul>
-                <button className="px-6 py-3 rounded-lg font-bold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors">Solicitar</button>
+                <div className="text-sm mb-6 soluciones-text">Entrega estimada: 15-30 días</div>
+                <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#f59e0b] text-[#b45309] bg-white hover:bg-[#f59e0b] hover:text-white transition-colors">Solicitar</button>
+              </div>
+
+              {/* Plan a Medida */}
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#ef4444] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
+                <div className="text-3xl mb-2">🔴</div>
+                <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan a Medida</h3>
+                <div className="text-lg mb-4 soluciones-text">Desde $250 USD / <span className="font-bold">Desde $50 USD</span> mensual</div>
+                <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
+                  <li>✓ SaaS, Marketplace o Dashboard</li>
+                  <li>✓ Autenticación, roles y permisos</li>
+                  <li>✓ Paneles de control e integración con APIs</li>
+                  <li>✓ Backend con lógica de negocio</li>
+                  <li>✓ Base de datos y almacenamiento seguro</li>
+                </ul>
+                <div className="text-sm mb-6 soluciones-text">Entrega estimada: según requerimientos</div>
+                <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#ef4444] text-[#ef4444] bg-white hover:bg-[#ef4444] hover:text-white transition-colors">Solicitar</button>
               </div>
             </div>
           </div>
