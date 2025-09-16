@@ -34,7 +34,7 @@ export default function Navbar() {
           {/*  <a href="#portafolio" className="navbar-link" onClick={e => handleSmoothScroll(e, 'portafolio')}>Portafolio</a> */}
           <a href="#pricing" className="navbar-link" onClick={e => handleSmoothScroll(e, 'pricing')}>Planes</a>
           <a href="#about" className="navbar-link" onClick={e => handleSmoothScroll(e, 'about')}>Sobre Nosotros</a>
-          <a href="#contacto" className="navbar-link" onClick={e => handleSmoothScroll(e, 'contacto')}>Contacto</a>
+          <a href="#contact" className="navbar-link" onClick={e => handleSmoothScroll(e, 'contacto')}>Contacto</a>
           {/* <button className="bg-accent text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">
             Cotizar Proyecto
           </button> */}
@@ -57,7 +57,7 @@ export default function Navbar() {
             {/* <a href="#portafolio" className="navbar-link text-xl" onClick={e => handleSmoothScroll(e, 'portafolio')}>Portafolio</a> */}
             <a href="#pricing" className="navbar-link text-xl" onClick={e => handleSmoothScroll(e, 'pricing')}>Planes</a>
             <a href="#about" className="navbar-link text-xl" onClick={e => handleSmoothScroll(e, 'about')}>Sobre Nosotros</a>
-            <a href="#contacto" className="navbar-link text-xl" onClick={e => handleSmoothScroll(e, 'contacto')}>Contacto</a>
+            <a href="#contact" className="navbar-link text-xl" onClick={e => handleSmoothScroll(e, 'contacto')}>Contacto</a>
           </div>
         )}
       </nav>

@@ -250,12 +250,13 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, a, li, label, input, textarea, butto
 }
 
 a:hover, .navbar-link:hover, button:hover {
-  color: var(--vital-color) !important;
+  color: var(--vital-color);
 }
 
 footer {
   background: var(--footer-background) !important;
   color: var(--footer-foreground) !important;
+  font-family: var(--font-mono, monospace) !important;
 }
 
 .gradient-bg {

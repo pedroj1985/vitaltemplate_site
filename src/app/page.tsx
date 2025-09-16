@@ -13,33 +13,40 @@ export default function Home() {
         {/* Hero Section */}
         <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb] mt-0" id="home">
           <div className="container mx-auto px-6">
-            <span className="inline-block mb-6 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase vital-text bg-[#eaf1fa] bg-opacity-80 border border-[#3270b3]">
+            {/* <span className="inline-block mb-6 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase vital-text bg-[#eaf1fa] bg-opacity-80 border border-[#3270b3]">
               🚀 Especialistas en Next.js & React
-            </span>
+            </span> */}
             <h1>
               <span className="vital-text">Sueña</span>, <span className="soluciones-text">nosotros lo hacemos realidad</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto font-mono soluciones-text">
               Creamos sitios web y aplicaciones que hacen crecer tu negocio y te posicionan por encima de la competencia.
             </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center mb-8">
-              <Link href="/pricing">
-                <button className="px-8 py-4 rounded-lg text-lg font-semibold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
-                  Ver Precios
-                </button>
-              </Link>
-              <Link href="/about">
-                <button className="px-8 py-4 rounded-lg text-lg font-semibold soluciones-text border-2 border-[#424c54] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
-                  Consulta Gratis
-                </button>
-              </Link>
+            <div className="flex flex-col md:flex-row gap-8 justify-center mb-2">
+              <div className="text-center">
+                <Link href="#pricing">
+                  <button className="px-8 py-4 rounded-lg text-lg font-semibold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
+                    Ver Precios
+                  </button>
+                </Link>
+              </div>
+              <div className="text-center">
+                <Link href="#contact">
+                  <button className="px-8 py-4 rounded-lg text-lg font-semibold soluciones-text border-2 border-[#424c54] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
+                    Consulta Gratis
+                  </button>
+                </Link>
+              </div>
             </div>
-            <div className="flex justify-center items-center space-x-8 text-sm opacity-80 font-mono">
+            <div className="text-center mt-8">
+              <span className="text-6xl bg-gradient-to-r from-[#3270b3] to-[#424c54] bg-clip-text text-transparent">⟨⟩</span>
+            </div>
+            {/* <div className="flex justify-center items-center space-x-8 text-sm opacity-80 font-mono">
               <span className="vital-text">✓ Next.js 14</span>
               <span>✓ TypeScript</span>
               <span>✓ Tailwind CSS</span>
               <span>✓ Vercel Deploy</span>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -129,67 +136,76 @@ export default function Home() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
               <h1>Nuestros Servicios</h1>
-              <p className="text-xl soluciones-text font-mono">Explora los tipos de sitio según tus objetivos</p>
+              <p className="text-xl soluciones-text font-mono">Especialistas en implementación de sitios web modernos</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-left">
-              {/* Card 1 */}
-              <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow">
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="text-4xl">🚀</div>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                <h2 className="text-2xl font-bold mb-4 soluciones-text font-mono">¿Cómo Trabajamos?</h2>
+                <p className="text-lg soluciones-text font-mono mb-6">
+                  Implementamos sitios web desde cero usando las tecnologías más modernas del mercado.
+                  Nuestro proceso incluye análisis de requerimientos, diseño personalizado, desarrollo
+                  con Next.js y TypeScript, optimización SEO, y despliegue en Vercel para máxima velocidad.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
-                    <p className="text-sm uppercase tracking-wide font-bold vital-text">Tipo de Sitio</p>
-                    <h3 className="text-base font-bold soluciones-text font-mono">Landing Page</h3>
+                    <h3 className="text-lg font-bold mb-3 vital-text">Tecnologías que Dominamos</h3>
+                    <ul className="space-y-2 soluciones-text font-mono">
+                      <li>• Next.js 14 con App Router</li>
+                      <li>• TypeScript para código robusto</li>
+                      <li>• Tailwind CSS para diseño</li>
+                      <li>• Vercel para hosting ultrarrápido</li>
+                      <li>• CMS Headless (Strapi, Sanity)</li>
+                    </ul>
                   </div>
-                  <a href="#" onClick={(e) => { e.preventDefault(); setModalKey('landing'); }} className="text-sm text-[#3270b3] underline font-mono">Más</a>
+                  <div>
+                    <h3 className="text-lg font-bold mb-3 vital-text">Nuestro Proceso</h3>
+                    <ul className="space-y-2 soluciones-text font-mono">
+                      <li>• Consulta inicial gratuita</li>
+                      <li>• Diseño y prototipado</li>
+                      <li>• Desarrollo ágil y transparente</li>
+                      <li>• Testing y optimización</li>
+                      <li>• Entrega y capacitación</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-              {/* Card 2 */}
-              <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow">
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="text-4xl">🏢</div>
-                  <div>
-                    <p className="text-sm uppercase tracking-wide font-bold vital-text">Tipo de Sitio</p>
-                    <h3 className="text-base font-bold soluciones-text font-mono">Web Corporativa</h3>
-                  </div>
-                  <a href="#" onClick={(e) => { e.preventDefault(); setModalKey('corporativa'); }} className="text-sm text-[#3270b3] underline font-mono">Más</a>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-4xl mb-4">🚀</div>
+                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Landing Pages</h3>
+                  <p className="text-sm soluciones-text font-mono">Sitios de una página para captar leads y promocionar productos</p>
                 </div>
-              </div>
 
-              {/* Card 3 */}
-              <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow">
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="text-4xl">📝</div>
-                  <div>
-                    <p className="text-sm uppercase tracking-wide font-bold vital-text">Tipo de Sitio</p>
-                    <h3 className="text-base font-bold soluciones-text font-mono">Blog & Contenido</h3>
-                  </div>
-                  <a href="#" onClick={(e) => { e.preventDefault(); setModalKey('blog'); }} className="text-sm text-[#3270b3] underline font-mono">Más</a>
+                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-4xl mb-4">🏢</div>
+                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Webs Corporativas</h3>
+                  <p className="text-sm soluciones-text font-mono">Sitios multipágina para empresas y profesionales</p>
                 </div>
-              </div>
 
-              {/* Card 4 */}
-              <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow">
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="text-4xl">🛍️</div>
-                  <div>
-                    <p className="text-sm uppercase tracking-wide font-bold vital-text">Tipo de Sitio</p>
-                    <h3 className="text-base font-bold soluciones-text font-mono">E-commerce</h3>
-                  </div>
-                  <a href="#" onClick={(e) => { e.preventDefault(); setModalKey('ecommerce'); }} className="text-sm text-[#3270b3] underline font-mono">Más</a>
+                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-4xl mb-4">📝</div>
+                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Blogs & Contenido</h3>
+                  <p className="text-sm soluciones-text font-mono">Plataformas de contenido con CMS headless</p>
                 </div>
-              </div>
 
-              {/* Card 5 */}
-              <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow">
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="text-4xl">⚡</div>
-                  <div>
-                    <p className="text-sm uppercase tracking-wide font-bold vital-text">Tipo de Sitio</p>
-                    <h3 className="text-base font-bold soluciones-text font-mono">SaaS & Apps</h3>
-                  </div>
-                  <a href="#" onClick={(e) => { e.preventDefault(); setModalKey('saas'); }} className="text-sm text-[#3270b3] underline font-mono">Más</a>
+                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-4xl mb-4">🛍️</div>
+                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">E-commerce</h3>
+                  <p className="text-sm soluciones-text font-mono">Tiendas online y catálogos de productos</p>
+                </div>
+
+                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-4xl mb-4">⚡</div>
+                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">SaaS & Apps</h3>
+                  <p className="text-sm soluciones-text font-mono">Aplicaciones web a medida y dashboards</p>
+                </div>
+
+                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-4xl mb-4">🔧</div>
+                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Mantenimiento</h3>
+                  <p className="text-sm soluciones-text font-mono">Soporte técnico y actualizaciones continuas</p>
                 </div>
               </div>
             </div>
@@ -226,25 +242,57 @@ export default function Home() {
         {/* About Section */}
         <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="about">
           <div className="container mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="text-center mb-12">
+              <h1>Sobre Nosotros</h1>
+            </div>
+            <div className="max-w-3xl mx-auto text-center">
               <div>
-                <h1>Sobre Nosotros</h1>
                 <p className="text-lg soluciones-text font-mono mb-6">
-                  Somos especialistas en crear sitios web que realmente funcionan para tu negocio. Con más de 5 años de experiencia, no hacemos páginas básicas, sino herramientas digitales que te ayudan a vender más.
+                  Diseñamos e implementamos sitios web rápidos, accesibles y orientados a conversión.
+                  Combinamos estrategia, diseño y tecnología para que tu marca crezca con una base digital sólida.
                 </p>
-                <ul className="list-disc pl-6 soluciones-text font-mono mb-6">
-                  <li>+50 proyectos entregados</li>
-                  <li>Expertos en Next.js, React y Tailwind</li>
-                  <li>Soporte y acompañamiento personalizado</li>
-                </ul>
-              </div>
-              <div className="bg-gradient-to-br from-[#3270b3] via-[#eaf1fa] to-[#424c54] rounded-xl h-96 flex items-center justify-center relative overflow-hidden shadow-lg">
-                <div className="text-white text-center z-10">
-                  <div className="text-6xl mb-4">⚡</div>
-                  <div className="text-2xl font-bold font-mono">Next.js</div>
-                  <div className="text-lg opacity-90 font-mono">Especialista</div>
+                <div className="grid sm:grid-cols-2 gap-6 mb-8 justify-items-center">
+                  <div className="bg-white rounded-lg border border-[#e5e7eb] p-4 shadow-sm">
+                    <div className="text-2xl mb-1">🚀</div>
+                    <div className="font-bold mb-1 soluciones-text font-mono">Enfoque en resultados</div>
+                    <div className="text-sm soluciones-text font-mono">Cada componente está pensado para convertir y cargar ultra rápido.</div>
+                  </div>
+                  <div className="bg-white rounded-lg border border-[#e5e7eb] p-4 shadow-sm">
+                    <div className="text-2xl mb-1">🔒</div>
+                    <div className="font-bold mb-1 soluciones-text font-mono">Calidad y seguridad</div>
+                    <div className="text-sm soluciones-text font-mono">Buenas prácticas, SEO técnico y despliegue confiable en Vercel.</div>
+                  </div>
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+                {/* <div className="flex flex-wrap gap-6 mb-8 justify-center text-center">
+                  <div className="text-left">
+                    <div className="text-3xl font-extrabold vital-text">+50</div>
+                    <div className="text-sm soluciones-text font-mono opacity-80">Proyectos entregados</div>
+                  </div>
+                  <div className="text-left">
+                    <div className="text-3xl font-extrabold vital-text">5+ años</div>
+                    <div className="text-sm soluciones-text font-mono opacity-80">de experiencia</div>
+                  </div>
+                  <div className="text-left">
+                    <div className="text-3xl font-extrabold vital-text">100%</div>
+                    <div className="text-sm soluciones-text font-mono opacity-80">enfoque en Next.js</div>
+                  </div>
+                </div> */}
+                <div className="flex flex-col md:flex-row gap-8 justify-center mb-2">
+                  <div className="text-center">
+                    <Link href="#pricing">
+                      <button className="px-8 py-4 rounded-lg text-lg font-semibold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
+                        Ver Planes
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="text-center">
+                    <Link href="#services">
+                      <button className="px-8 py-4 rounded-lg text-lg font-semibold soluciones-text border-2 border-[#424c54] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
+                        Qué hacemos
+                      </button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
