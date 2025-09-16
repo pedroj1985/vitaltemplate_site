@@ -25,18 +25,18 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-8 justify-center mb-2">
               <div className="text-center">
                 <Link href="#pricing">
-                  <button className="px-8 py-4 rounded-lg text-lg font-semibold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
-                    Ver Precios
-                  </button>
-                </Link>
+                <button className="px-8 py-4 rounded-lg text-lg font-semibold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
+                  Ver Precios
+                </button>
+              </Link>
               </div>
               <div className="text-center">
                 <Link href="#contact">
-                  <button className="px-8 py-4 rounded-lg text-lg font-semibold soluciones-text border-2 border-[#424c54] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
-                    Consulta Gratis
-                  </button>
-                </Link>
-              </div>
+                <button className="px-8 py-4 rounded-lg text-lg font-semibold soluciones-text border-2 border-[#424c54] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
+                  Consulta Gratis
+                </button>
+              </Link>
+            </div>
             </div>
             <div className="text-center mt-8">
               <span className="text-6xl bg-gradient-to-r from-[#3270b3] to-[#424c54] bg-clip-text text-transparent">⟨⟩</span>
@@ -206,7 +206,7 @@ export default function Home() {
                   <div className="text-4xl mb-4">🔧</div>
                   <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Mantenimiento</h3>
                   <p className="text-sm soluciones-text font-mono">Soporte técnico y actualizaciones continuas</p>
-                </div>
+              </div>
               </div>
             </div>
           </div>
@@ -291,7 +291,7 @@ export default function Home() {
                         Qué hacemos
                       </button>
                     </Link>
-                  </div>
+              </div>
                 </div>
               </div>
             </div>
@@ -317,6 +317,7 @@ export default function Home() {
                   <li>✓ Secciones: Inicio, Servicios, Contacto</li>
                   <li>✓ Formulario de contacto</li>
                   <li>✓ Generación estática (SSG)</li>
+                  <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
                 <div className="text-sm mb-6 soluciones-text">Entrega estimada: 3-5 días</div>
                 <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#22c55e] text-[#22c55e] bg-white hover:bg-[#22c55e] hover:text-white transition-colors">Solicitar</button>
@@ -333,6 +334,7 @@ export default function Home() {
                   <li>✓ SEO básico en cada página</li>
                   <li>✓ Galería, mapa y formularios avanzados</li>
                   <li>✓ Generación estática (SSG)</li>
+                  <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
                 <div className="text-sm mb-6 soluciones-text">Entrega estimada: 7-15 días</div>
                 <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#3b82f6] text-[#3b82f6] bg-white hover:bg-[#3b82f6] hover:text-white transition-colors">Solicitar</button>
@@ -349,6 +351,7 @@ export default function Home() {
                   <li>✓ Categorías, etiquetas y búsqueda interna</li>
                   <li>✓ Regeneración Estática Incremental (ISR)</li>
                   <li>✓ Panel de administración</li>
+                  <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
                 <div className="text-sm mb-6 soluciones-text">Entrega estimada: 15-30 días</div>
                 <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#f59e0b] text-[#b45309] bg-white hover:bg-[#f59e0b] hover:text-white transition-colors">Solicitar</button>
@@ -365,6 +368,7 @@ export default function Home() {
                   <li>✓ Paneles de control e integración con APIs</li>
                   <li>✓ Backend con lógica de negocio</li>
                   <li>✓ Base de datos y almacenamiento seguro</li>
+                  <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
                 <div className="text-sm mb-6 soluciones-text">Entrega estimada: según requerimientos</div>
                 <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#ef4444] text-[#ef4444] bg-white hover:bg-[#ef4444] hover:text-white transition-colors">Solicitar</button>
