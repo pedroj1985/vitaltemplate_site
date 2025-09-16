@@ -27,10 +27,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Tecnologías</h3>
             <ul className="space-y-2">
-              <li>Next.js 14 & React</li>
+              <li>Next.js & React</li>
               <li>TypeScript</li>
               <li>Tailwind CSS</li>
-              <li>Vercel & AWS</li>
+              <li>Vercel</li>
             </ul>
           </div>
           <div>

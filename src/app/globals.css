@@ -15,6 +15,8 @@ button:hover, .btn:hover {
 :root {
   --background: #f8f9fa;
   --foreground: #212529;
+  --accent: #F97316;
+  --accent-foreground: #f8f9fa;
   --card: #ffffff;
   --card-foreground: #212529;
   --popover: #ffffff;
@@ -189,6 +191,10 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+main {
+  padding: 1rem 2rem !important;
+}
+
 code, pre, .font-mono {
   font-family: var(--font-mono, 'Fira Code', 'JetBrains Mono', monospace);
   font-size: 1em;
@@ -200,9 +206,17 @@ code, pre, .font-mono {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-sans, 'Fira Code', 'JetBrains Mono', Arial, Helvetica, sans-serif);
+  font-family: var(--font-mono, 'Fira Code', 'JetBrains Mono', Arial, Helvetica, sans-serif);
   font-weight: 700;
   letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: 1.50rem;
+  margin-bottom: 0.5rem;
+  color: var(--vital-color) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.03em !important;
 }
 
 a {
@@ -242,4 +256,17 @@ a:hover, .navbar-link:hover, button:hover {
 footer {
   background: var(--footer-background) !important;
   color: var(--footer-foreground) !important;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }

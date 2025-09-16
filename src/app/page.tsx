@@ -3,18 +3,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans bg-background text-foreground min-h-screen flex flex-col">
-      {/* ...existing code... */}
-
+    <div className="bg-background text-foreground min-h-screen flex flex-col">
       {/* Main Content */}
-      <main className="flex-1 pt-24">
+      <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]">
+        <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb] mt-0" id="inicio">
           <div className="container mx-auto px-6">
             <span className="inline-block mb-6 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase vital-text bg-[#eaf1fa] bg-opacity-80 border border-[#3270b3]">
               🚀 Especialistas en Next.js & React
             </span>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 font-mono">
+            <h1>
               <span className="vital-text">Sueña</span>, <span className="soluciones-text">nosotros lo hacemos realidad</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto font-mono soluciones-text">
@@ -42,10 +40,10 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="w-full py-20 bg-[#f5f7fa] border-b border-[#e5e7eb]" id="services">
+        <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="services">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 vital-text font-mono">Nuestros Servicios</h2>
+              <h1>Nuestros Servicios</h1>
               <p className="text-xl soluciones-text font-mono">Creamos sitios web que realmente funcionan para tu negocio</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
@@ -69,26 +67,26 @@ export default function Home() {
         </section>
 
         {/* Portfolio Section */}
-        {/* <section className="w-full py-20 bg-[#f5f7fa] border-b border-[#e5e7eb]" id="portfolio">
+        {/* <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="portfolio">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 vital-text font-mono">Nuestros Trabajos</h2>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 font-mono">Nuestros Trabajos</h1>
               <p className="text-xl soluciones-text font-mono">Sitios web reales que hemos creado para nuestros clientes</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl shadow p-8 flex flex-col items-center border border-[#e5e7eb] hover:shadow-lg transition-shadow">
                 <img src="/portfolio/ejemplo1.png" alt="Proyecto 1" className="w-24 h-24 object-contain mb-4 rounded" />
-                <h3 className="text-xl font-bold mb-2 vital-text font-mono">Tienda Online</h3>
+                <h3 className="text-xl font-bold mb-2 font-mono">Tienda Online</h3>
                 <p className="text-base soluciones-text font-mono mb-4 text-center">E-commerce moderno, rápido y seguro, integrado con pasarelas de pago.</p>
               </div>
               <div className="bg-white rounded-xl shadow p-8 flex flex-col items-center border border-[#e5e7eb] hover:shadow-lg transition-shadow">
                 <img src="/portfolio/ejemplo2.png" alt="Proyecto 2" className="w-24 h-24 object-contain mb-4 rounded" />
-                <h3 className="text-xl font-bold mb-2 vital-text font-mono">Web Corporativa</h3>
+                <h3 className="text-xl font-bold mb-2 font-mono">Web Corporativa</h3>
                 <p className="text-base soluciones-text font-mono mb-4 text-center">Presencia digital profesional para empresas y marcas personales.</p>
               </div>
               <div className="bg-white rounded-xl shadow p-8 flex flex-col items-center border border-[#e5e7eb] hover:shadow-lg transition-shadow">
                 <img src="/portfolio/ejemplo3.png" alt="Proyecto 3" className="w-24 h-24 object-contain mb-4 rounded" />
-                <h3 className="text-xl font-bold mb-2 vital-text font-mono">App SaaS</h3>
+                <h3 className="text-xl font-bold mb-2 font-mono">App SaaS</h3>
                 <p className="text-base soluciones-text font-mono mb-4 text-center">Aplicación en la nube para gestión y automatización de procesos.</p>
               </div>
             </div>
@@ -96,11 +94,11 @@ export default function Home() {
         </section> */}
 
         {/* About Section */}
-        <section className="w-full py-20 bg-white border-b border-[#e5e7eb]" id="about">
+        <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="about">
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 vital-text font-mono">Sobre Nosotros</h2>
+                <h1>Sobre Nosotros</h1>
                 <p className="text-lg soluciones-text font-mono mb-6">
                   Somos especialistas en crear sitios web que realmente funcionan para tu negocio. Con más de 5 años de experiencia, no hacemos páginas básicas, sino herramientas digitales que te ayudan a vender más.
                 </p>
@@ -123,10 +121,10 @@ export default function Home() {
         </section>
 
         {/* Pricing Section */}
-        <section className="w-full py-20 bg-white border-b border-[#e5e7eb]" id="pricing">
+        <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="pricing">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 vital-text font-mono">Planes</h2>
+              <h1>Planes</h1>
               <p className="text-xl soluciones-text font-mono">Elige el plan que mejor se adapte a tu proyecto</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
@@ -171,34 +169,34 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="w-full py-20 bg-[#f5f7fa]" id="testimonials">
+        {/* <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="testimonials">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 vital-text font-mono">Testimonios</h2>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 font-mono">Testimonios</h1>
               <p className="text-xl soluciones-text font-mono">Lo que dicen los clientes sobre nuestras soluciones Next.js</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl shadow p-8 border border-[#e5e7eb] flex flex-col items-center hover:shadow-lg transition-shadow">
                 <div className="text-5xl mb-4">⭐️⭐️⭐️⭐️⭐️</div>
                 <p className="text-base soluciones-text font-mono mb-4 text-center">“El equipo de VitalSoluciones superó nuestras expectativas. La web es rápida, moderna y nos ayudó a captar más clientes.”</p>
-                <div className="font-bold vital-text font-mono">Carlos M.</div>
+                <div className="font-bold font-mono">Carlos M.</div>
                 <div className="text-xs soluciones-text font-mono">CEO, Agencia Creativa</div>
               </div>
               <div className="bg-white rounded-xl shadow p-8 border border-[#e5e7eb] flex flex-col items-center hover:shadow-lg transition-shadow">
                 <div className="text-5xl mb-4">⭐️⭐️⭐️⭐️⭐️</div>
                 <p className="text-base soluciones-text font-mono mb-4 text-center">“Excelente trato y soporte. La migración a Next.js fue sencilla y ahora nuestra web carga en segundos.”</p>
-                <div className="font-bold vital-text font-mono">Lucía G.</div>
+                <div className="font-bold font-mono">Lucía G.</div>
                 <div className="text-xs soluciones-text font-mono">Directora, Startup SaaS</div>
               </div>
               <div className="bg-white rounded-xl shadow p-8 border border-[#e5e7eb] flex flex-col items-center hover:shadow-lg transition-shadow">
                 <div className="text-5xl mb-4">⭐️⭐️⭐️⭐️⭐️</div>
                 <p className="text-base soluciones-text font-mono mb-4 text-center">“Recomiendo 100%. El diseño y la funcionalidad de la web nos diferencian de la competencia.”</p>
-                <div className="font-bold vital-text font-mono">Miguel R.</div>
+                <div className="font-bold font-mono">Miguel R.</div>
                 <div className="text-xs soluciones-text font-mono">Gerente, Comercio Local</div>
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   );

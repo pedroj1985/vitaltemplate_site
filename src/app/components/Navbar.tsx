@@ -19,12 +19,15 @@ export default function Navbar() {
         </div>
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-8 font-mono" style={{ background: 'transparent' }}>
-          <Link href="#inicio" className="navbar-link">Inicio</Link>
-          <Link href="#servicios" className="navbar-link">Servicios</Link>
-         {/*  <Link href="#portafolio" className="navbar-link">Portafolio</Link> */}
-          <Link href="#pricing" className="navbar-link">Planes</Link>
-          <Link href="#about" className="navbar-link">Sobre Nosotros</Link>
-          <Link href="#contacto" className="navbar-link">Contacto</Link>
+            <Link href="#inicio" className="navbar-link">Inicio</Link>
+            <Link href="#servicios" className="navbar-link">Servicios</Link>
+            {/*  <Link href="#portafolio" className="navbar-link">Portafolio</Link> */}
+            <Link href="#pricing" className="navbar-link">Planes</Link>
+            <Link href="#about" className="navbar-link">Sobre Nosotros</Link>
+            <Link href="#contacto" className="navbar-link">Contacto</Link>
+            {/* <button className="bg-accent text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                Cotizar Proyecto
+            </button> */}
         </div>
         {/* Mobile menu button */}
         <button
