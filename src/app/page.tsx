@@ -20,7 +20,7 @@ export default function Home() {
               <span className="vital-text">Sueña</span>, <span className="soluciones-text">nosotros lo hacemos realidad</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto font-mono soluciones-text">
-              Creamos sitios web y aplicaciones que hacen crecer tu negocio y te posicionan por encima de la competencia.
+              Creamos páginas web y aplicaciones fáciles de usar, que ayudan a que tu negocio crezca y destaque frente a la competencia.
             </p>
             <div className="flex flex-col md:flex-row gap-8 justify-center mb-2">
               <div className="text-center">
@@ -135,8 +135,8 @@ export default function Home() {
         <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="services">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h1>Nuestros Servicios</h1>
-              <p className="text-xl soluciones-text font-mono">Especialistas en implementación de sitios web modernos</p>
+              <h1>¿Qué hacemos?</h1>
+              <p className="text-xl soluciones-text font-mono">Te ayudamos a tener presencia profesional en internet, sin complicaciones. Nos encargamos de todo: desde el diseño hasta que tu web esté funcionando.</p>
             </div>
 
             <div className="max-w-4xl mx-auto">
@@ -149,23 +149,22 @@ export default function Home() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
-                    <h3 className="text-lg font-bold mb-3 vital-text">Tecnologías que Dominamos</h3>
+                    <h3 className="text-lg font-bold mb-3 vital-text">¿Con qué herramientas trabajamos?</h3>
                     <ul className="space-y-2 soluciones-text font-mono">
-                      <li>• Next.js 14 con App Router</li>
-                      <li>• TypeScript para código robusto</li>
-                      <li>• Tailwind CSS para diseño</li>
-                      <li>• Vercel para hosting ultrarrápido</li>
-                      <li>• CMS Headless (Strapi, Sanity)</li>
+                      <li>• Usamos tecnología moderna para que tu web sea rápida y segura.</li>
+                      <li>• El diseño se adapta a celulares, tablets y computadoras.</li>
+                      <li>• Tu página estará siempre disponible y cargará en segundos.</li>
+                      <li>• Si necesitas publicar noticias o productos, te damos un panel fácil de usar.</li>
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold mb-3 vital-text">Nuestro Proceso</h3>
+                    <h3 className="text-lg font-bold mb-3 vital-text">¿Cómo trabajamos contigo?</h3>
                     <ul className="space-y-2 soluciones-text font-mono">
-                      <li>• Consulta inicial gratuita</li>
-                      <li>• Diseño y prototipado</li>
-                      <li>• Desarrollo ágil y transparente</li>
-                      <li>• Testing y optimización</li>
-                      <li>• Entrega y capacitación</li>
+                      <li>• Hablamos contigo para entender tu idea (¡la consulta es gratis!).</li>
+                      <li>• Te mostramos un diseño antes de programar nada.</li>
+                      <li>• Te mantenemos informado durante todo el desarrollo.</li>
+                      <li>• Probamos todo para que funcione perfecto.</li>
+                      <li>• Te entregamos la web lista y te enseñamos a usarla.</li>
                     </ul>
                   </div>
                 </div>
@@ -175,37 +174,37 @@ export default function Home() {
                 <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
                   <div className="text-4xl mb-4">🚀</div>
                   <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Landing Pages</h3>
-                  <p className="text-sm soluciones-text font-mono">Sitios de una página para captar leads y promocionar productos</p>
+                  <p className="text-sm soluciones-text font-mono">Una sola página para captar clientes o mostrar tu producto.</p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
                   <div className="text-4xl mb-4">🏢</div>
                   <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Webs Corporativas</h3>
-                  <p className="text-sm soluciones-text font-mono">Sitios multipágina para empresas y profesionales</p>
+                  <p className="text-sm soluciones-text font-mono">Sitios completos para empresas, con varias secciones.</p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
                   <div className="text-4xl mb-4">📝</div>
                   <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Blogs & Contenido</h3>
-                  <p className="text-sm soluciones-text font-mono">Plataformas de contenido con CMS headless</p>
+                  <p className="text-sm soluciones-text font-mono">Espacios para publicar noticias o artículos fácilmente.</p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
                   <div className="text-4xl mb-4">🛍️</div>
-                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">E-commerce</h3>
-                  <p className="text-sm soluciones-text font-mono">Tiendas online y catálogos de productos</p>
+                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Tienda Online</h3>
+                  <p className="text-sm soluciones-text font-mono">Vende tus productos en internet, con pagos seguros.</p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
                   <div className="text-4xl mb-4">⚡</div>
-                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">SaaS & Apps</h3>
-                  <p className="text-sm soluciones-text font-mono">Aplicaciones web a medida y dashboards</p>
+                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Aplicaciones a Medida</h3>
+                  <p className="text-sm soluciones-text font-mono">Soluciones personalizadas para necesidades especiales.</p>
                 </div>
 
                 <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
                   <div className="text-4xl mb-4">🔧</div>
                   <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Mantenimiento</h3>
-                  <p className="text-sm soluciones-text font-mono">Soporte técnico y actualizaciones continuas</p>
+                  <p className="text-sm soluciones-text font-mono">Nos ocupamos de que tu web siempre funcione bien.</p>
               </div>
               </div>
             </div>
@@ -243,24 +242,23 @@ export default function Home() {
         <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="about">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
-              <h1>Sobre Nosotros</h1>
+              <h1>¿Por qué elegirnos?</h1>
             </div>
             <div className="max-w-3xl mx-auto text-center">
               <div>
                 <p className="text-lg soluciones-text font-mono mb-6">
-                  Diseñamos e implementamos sitios web rápidos, accesibles y orientados a conversión.
-                  Combinamos estrategia, diseño y tecnología para que tu marca crezca con una base digital sólida.
+                  Diseñamos páginas rápidas, seguras y que se ven bien en cualquier dispositivo. Nuestro objetivo es que consigas más clientes y que tu marca crezca.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-6 mb-8 justify-items-center">
                   <div className="bg-white rounded-lg border border-[#e5e7eb] p-4 shadow-sm">
                     <div className="text-2xl mb-1">🚀</div>
                     <div className="font-bold mb-1 soluciones-text font-mono">Enfoque en resultados</div>
-                    <div className="text-sm soluciones-text font-mono">Cada componente está pensado para convertir y cargar ultra rápido.</div>
+                    <div className="text-sm soluciones-text font-mono">Nos enfocamos en resultados reales, no solo en diseño.</div>
                   </div>
                   <div className="bg-white rounded-lg border border-[#e5e7eb] p-4 shadow-sm">
                     <div className="text-2xl mb-1">🔒</div>
                     <div className="font-bold mb-1 soluciones-text font-mono">Calidad y seguridad</div>
-                    <div className="text-sm soluciones-text font-mono">Buenas prácticas, SEO técnico y despliegue confiable en Vercel.</div>
+                    <div className="text-sm soluciones-text font-mono">Usamos herramientas modernas, pero tú solo ves lo fácil que es tener tu web lista.</div>
                   </div>
                 </div>
                 {/* <div className="flex flex-wrap gap-6 mb-8 justify-center text-center">
@@ -303,14 +301,14 @@ export default function Home() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-12">
               <h1>🧩 Planes y Precios</h1>
-              <p className="text-xl soluciones-text font-mono">Elige el plan ideal y empieza a construir</p>
+              <p className="text-xl soluciones-text font-mono">Todos nuestros planes incluyen dominio y alojamiento. Te explicamos cada paso y no hay costos ocultos.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {/* Plan Esencial */}
               <div className="bg-white rounded-2xl shadow-xl border-2 border-[#22c55e] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
                 <div className="text-3xl mb-2">🟢</div>
                 <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Esencial</h3>
-                <div className="text-lg mb-4 soluciones-text">$40 USD / <span className="font-bold">$10 USD</span> mensual</div>
+                <div className="text-lg mb-4 soluciones-text">Página simple para mostrar tu negocio y recibir mensajes.</div>
                 <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
                   <li>✓ Landing Page (una sola página)</li>
                   <li>✓ Diseño responsivo y personalizado</li>
@@ -327,7 +325,7 @@ export default function Home() {
               <div className="bg-white rounded-2xl shadow-xl border-2 border-[#3b82f6] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
                 <div className="text-3xl mb-2">🔵</div>
                 <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Profesional</h3>
-                <div className="text-lg mb-4 soluciones-text">$80 USD / <span className="font-bold">$20 USD</span> mensual</div>
+                <div className="text-lg mb-4 soluciones-text">Sitio completo con varias secciones y funciones extra.</div>
                 <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
                   <li>✓ Sitio institucional multipágina</li>
                   <li>✓ Diseño alineado a la marca</li>
@@ -344,7 +342,7 @@ export default function Home() {
               <div className="bg-white rounded-2xl shadow-xl border-2 border-[#f59e0b] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
                 <div className="text-3xl mb-2">🟠</div>
                 <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Contenido Dinámico</h3>
-                <div className="text-lg mb-4 soluciones-text">$120 USD / <span className="font-bold">$30 USD</span> mensual</div>
+                <div className="text-lg mb-4 soluciones-text">Publica artículos o noticias fácilmente.</div>
                 <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
                   <li>✓ Blog o revista digital</li>
                   <li>✓ CMS Headless (Strapi, Sanity, etc.)</li>
@@ -361,7 +359,7 @@ export default function Home() {
               <div className="bg-white rounded-2xl shadow-xl border-2 border-[#ef4444] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
                 <div className="text-3xl mb-2">🔴</div>
                 <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan a Medida</h3>
-                <div className="text-lg mb-4 soluciones-text">Desde $250 USD / <span className="font-bold">Desde $50 USD</span> mensual</div>
+                <div className="text-lg mb-4 soluciones-text">Soluciones personalizadas para ideas únicas.</div>
                 <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
                   <li>✓ SaaS, Marketplace o Dashboard</li>
                   <li>✓ Autenticación, roles y permisos</li>
