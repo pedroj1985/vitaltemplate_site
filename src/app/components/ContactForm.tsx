@@ -25,8 +25,8 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (sending) return;
-    // Validación de campos obligatorios y longitud
-    const newErrors: any = {};
+  // Validación de campos obligatorios y longitud
+  const newErrors: FormErrors = {};
     if (!form.name.trim()) newErrors.name = 'Campo requerido';
     else if (form.name.length > 100) newErrors.name = 'Máximo 100 caracteres';
     if (!form.email.trim()) newErrors.email = 'Campo requerido';
@@ -51,10 +51,10 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-      let data = null;
+      let data: { error?: string } | null = null;
       try {
         data = await res.json();
-      } catch (jsonErr) {
+      } catch {
         // Si la respuesta no es JSON válido
         throw new Error('Error inesperado en el servidor (respuesta no JSON)');
       }
@@ -63,9 +63,10 @@ export default function ContactForm() {
       toast.success('¡Gracias por tu mensaje! Te responderemos pronto.');
       setForm({ name: '', email: '', message: '' });
       setErrors({});
-    } catch (err: any) {
-      setErrors({ form: err.message || 'Error inesperado' });
-      toast.error(err.message || 'Error inesperado');
+    } catch (err) {
+      const errorMsg = err instanceof Error ? err.message : 'Error inesperado';
+      setErrors({ form: errorMsg });
+      toast.error(errorMsg);
     }
     setSending(false);
   };

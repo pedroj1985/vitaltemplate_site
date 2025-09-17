@@ -35,8 +35,11 @@ export async function POST(req: NextRequest) {
       html: emailHtml,
     });
     return NextResponse.json({ ok: true });
-  } catch (error: any) {
+  } catch (error) {
+    let errorMsg = 'Error desconocido';
+    if (error instanceof Error) errorMsg = error.message;
+    else if (typeof error === 'string') errorMsg = error;
     console.error('Error enviando correo:', error);
-    return NextResponse.json({ error: error?.message || String(error) }, { status: 500 });
+    return NextResponse.json({ error: errorMsg }, { status: 500 });
   }
 }
