@@ -1,13 +1,15 @@
 "use client";
 import Image from "next/image";
+import ContactForm from "./ContactForm";
 
 export default function Footer() {
   return (
     <footer className="py-14 mt-12 font-mono pt-24" id="contact">
       <div className="w-full px-2 sm:px-4 md:px-6 lg:px-8 pt-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-10 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 mb-10 items-start">
+          {/* Columna 1: VitalSoluciones */}
           <div>
-            <div className="flex items-center justify-center mb-4">
+            <div className="flex flex-col items-center mb-4">
               <div className="group cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_20px_rgba(50,112,179,0.6)]">
                 <Image
                   src="/assets/logo.png"
@@ -17,8 +19,10 @@ export default function Footer() {
                   className="h-12 w-auto filter brightness-0 invert transition-all duration-300 group-hover:brightness-100 group-hover:invert-0"
                 />
               </div>
+              <span className="mt-3 text-base text-[#cbd5e1] text-center max-w-xs">Tu web en manos seguras: trabajamos con transparencia, soporte real y total confidencialidad.</span>
             </div>
           </div>
+          {/* Columna 2: Enlaces */}
           <div>
             <h3 className="text-lg font-bold mb-4">Enlaces</h3>
             <ul className="space-y-2">
@@ -56,6 +60,7 @@ export default function Footer() {
               </a></li>
             </ul>
           </div>
+          {/* Columna 3: Contacto */}
           <div>
             <h3 className="text-lg font-bold mb-4">Contacto</h3>
             <ul className="space-y-2">
@@ -81,14 +86,10 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-  {/*         <div className="mt-8">
-            <form className="max-w-md mx-auto space-y-3" autoComplete="off">
-              <input type="text" name="name" placeholder="Nombre" className="w-full px-3 py-2 rounded bg-[#23272b] placeholder-[#94a3b8] focus:outline-none focus:ring-2 focus:ring-[#3270b3]" required />
-              <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 rounded bg-[#23272b] placeholder-[#94a3b8] focus:outline-none focus:ring-2 focus:ring-[#3270b3]" required />
-              <textarea name="message" placeholder="Mensaje" rows={3} className="w-full px-3 py-2 rounded bg-[#23272b] placeholder-[#94a3b8] focus:outline-none focus:ring-2 focus:ring-[#3270b3]" required />
-              <button type="submit" className="w-full bg-[#3270b3] py-2 rounded font-mono hover:bg-[#275b8f] transition-colors">Enviar Mensaje</button>
-            </form>
-          </div> */}
+          {/* Columna 4: Formulario de contacto al final */}
+          <div className="max-w-2xl mx-auto">
+            <ContactForm />
+          </div>
         </div>
         <div className="border-t border-[#334155] pt-8 text-center">
           <p className="text-white">&copy;2025 VitalSoluciones.  Todos los derechos reservados. Desarrollado con Next.js.</p>

@@ -303,7 +303,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
               {/* Plan Esencial */}
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#22c55e] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#22c55e] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform h-full">
                 <div className="text-2xl sm:text-3xl mb-2">🟢</div>
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 soluciones-text">Plan Esencial</h3>
                 <div className="text-2xl sm:text-3xl font-bold mb-2 vital-text">$40 USD</div>
@@ -318,11 +318,12 @@ export default function Home() {
                   <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
                 <div className="text-xs sm:text-sm mb-4 sm:mb-6 soluciones-text">Entrega estimada: 3-5 días</div>
-                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#22c55e] text-[#22c55e] bg-white hover:bg-[#22c55e] hover:text-white transition-colors text-sm sm:text-base">Solicitar</button>
+                <div className="flex-grow" />
+                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#22c55e] text-[#22c55e] bg-white hover:bg-[#22c55e] hover:text-white transition-colors text-sm sm:text-base mt-auto">Solicitar</button>
               </div>
 
               {/* Plan Profesional */}
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#3b82f6] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#3b82f6] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform h-full">
                 <div className="text-2xl sm:text-3xl mb-2">🔵</div>
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 soluciones-text">Plan Profesional</h3>
                 <div className="text-2xl sm:text-3xl font-bold mb-2 vital-text">$80 USD</div>
@@ -337,11 +338,12 @@ export default function Home() {
                   <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
                 <div className="text-xs sm:text-sm mb-4 sm:mb-6 soluciones-text">Entrega estimada: 7-15 días</div>
-                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#3b82f6] text-[#3b82f6] bg-white hover:bg-[#3b82f6] hover:text-white transition-colors text-sm sm:text-base">Solicitar</button>
+                <div className="flex-grow" />
+                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#3b82f6] text-[#3b82f6] bg-white hover:bg-[#3b82f6] hover:text-white transition-colors text-sm sm:text-base mt-auto">Solicitar</button>
               </div>
 
               {/* Plan Contenido Dinámico */}
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#f59e0b] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#f59e0b] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform h-full">
                 <div className="text-2xl sm:text-3xl mb-2">🟠</div>
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 soluciones-text">Plan Contenido Dinámico</h3>
                 <div className="text-2xl sm:text-3xl font-bold mb-2 vital-text">$120 USD</div>
@@ -356,11 +358,12 @@ export default function Home() {
                   <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
                 <div className="text-xs sm:text-sm mb-4 sm:mb-6 soluciones-text">Entrega estimada: 15-30 días</div>
-                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#f59e0b] text-[#b45309] bg-white hover:bg-[#f59e0b] hover:text-white transition-colors text-sm sm:text-base">Solicitar</button>
+                <div className="flex-grow" />
+                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#f59e0b] text-[#b45309] bg-white hover:bg-[#f59e0b] hover:text-white transition-colors text-sm sm:text-base mt-auto">Solicitar</button>
               </div>
 
               {/* Plan a Medida */}
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#ef4444] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#ef4444] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform h-full">
                 <div className="text-2xl sm:text-3xl mb-2">🔴</div>
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 soluciones-text">Plan a Medida</h3>
                 <div className="text-2xl sm:text-3xl font-bold mb-2 vital-text">$200+ USD</div>
@@ -375,7 +378,8 @@ export default function Home() {
                   <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
                 <div className="text-xs sm:text-sm mb-4 sm:mb-6 soluciones-text">Entrega estimada: según requerimientos</div>
-                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#ef4444] text-[#ef4444] bg-white hover:bg-[#ef4444] hover:text-white transition-colors text-sm sm:text-base">Solicitar</button>
+                <div className="flex-grow" />
+                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#ef4444] text-[#ef4444] bg-white hover:bg-[#ef4444] hover:text-white transition-colors text-sm sm:text-base mt-auto">Solicitar</button>
               </div>
             </div>
           </div>
