@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,9 +9,11 @@ export default function Footer() {
           <div>
             <div className="flex items-center justify-center mb-4">
               <div className="group cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_20px_rgba(50,112,179,0.6)]">
-                <img
+                <Image
                   src="/assets/logo.png"
                   alt="VitalSoluciones Logo"
+                  width={48}
+                  height={48}
                   className="h-12 w-auto filter brightness-0 invert transition-all duration-300 group-hover:brightness-100 group-hover:invert-0"
                 />
               </div>
