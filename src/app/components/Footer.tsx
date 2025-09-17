@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="py-14 mt-12 font-mono pt-24" id="contact">
-      <div className="container mx-auto px-6 pt-8">
-        <div className="grid md:grid-cols-3 gap-10 mb-10 items-center">
+      <div className="w-full px-4 sm:px-6 lg:px-8 pt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-10 items-center">
           <div>
             <div className="flex items-center justify-center mb-4">
               <div className="group cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_20px_rgba(50,112,179,0.6)]">

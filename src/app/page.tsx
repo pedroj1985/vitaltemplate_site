@@ -12,27 +12,27 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb] mt-0" id="home">
-          <div className="container mx-auto px-6">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             {/* <span className="inline-block mb-6 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase vital-text bg-[#eaf1fa] bg-opacity-80 border border-[#3270b3]">
               🚀 Especialistas en Next.js & React
             </span> */}
             <h1>
               <span className="vital-text">Sueña</span>, <span className="soluciones-text">nosotros lo hacemos realidad</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto font-mono soluciones-text">
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 opacity-90 max-w-4xl mx-auto font-mono soluciones-text px-2">
               Creamos páginas web y aplicaciones fáciles de usar, que ayudan a que tu negocio crezca y destaque frente a la competencia.
             </p>
-            <div className="flex flex-col md:flex-row gap-8 justify-center mb-2">
-              <div className="text-center">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center mb-2 px-4">
+              <div className="text-center w-full sm:w-auto">
                 <Link href="#pricing">
-                <button className="px-8 py-4 rounded-lg text-lg font-semibold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
+                <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
                   Ver Precios
                 </button>
               </Link>
               </div>
-              <div className="text-center">
+              <div className="text-center w-full sm:w-auto">
                 <Link href="#contact">
-                <button className="px-8 py-4 rounded-lg text-lg font-semibold soluciones-text border-2 border-[#424c54] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
+                <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold soluciones-text border-2 border-[#424c54] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
                   Consulta Gratis
                 </button>
               </Link>
@@ -133,19 +133,19 @@ export default function Home() {
 
         {/* Services Section */}
         <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="services">
-          <div className="container mx-auto px-6">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h1>¿Qué hacemos?</h1>
-              <p className="text-xl soluciones-text font-mono">Te ayudamos a tener presencia profesional en internet, sin complicaciones. Nos encargamos de todo: desde el diseño hasta que tu web esté funcionando.</p>
+              <p className="text-lg sm:text-xl soluciones-text font-mono px-2">Te ayudamos a tener presencia profesional en internet, sin complicaciones. Nos encargamos de todo: desde el diseño hasta que tu web esté funcionando.</p>
             </div>
 
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
-                <h2 className="text-2xl font-bold mb-4 soluciones-text font-mono">¿Cómo Trabajamos?</h2>
-                <p className="text-lg soluciones-text font-mono mb-6">
+            <div className="w-full max-w-6xl mx-auto">
+              <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 mb-8">
+                <h2 className="text-xl sm:text-2xl font-bold mb-4 soluciones-text font-mono">¿Cómo Trabajamos?</h2>
+                <p className="text-base sm:text-lg soluciones-text font-mono mb-6 px-2">
                   Creamos tu página web desde cero, escuchando lo que necesitas y adaptando el diseño a tu gusto. Nos encargamos de todo: desde entender tu idea, hasta que tu web esté lista, rápida y visible en internet. Tú solo cuéntanos tu objetivo, nosotros lo hacemos realidad.
                 </p>
-                <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 text-left">
                   <div>
                     <h3 className="text-lg font-bold mb-3 vital-text">¿Con qué herramientas trabajamos?</h3>
                     <ul className="space-y-2 soluciones-text font-mono">
@@ -168,41 +168,41 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
-                  <div className="text-4xl mb-4">🚀</div>
-                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Landing Pages</h3>
-                  <p className="text-sm soluciones-text font-mono">Una sola página para captar clientes o mostrar tu producto.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                <div className="bg-white rounded-xl shadow p-4 sm:p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-3xl sm:text-4xl mb-4">🚀</div>
+                  <h3 className="text-base sm:text-lg font-bold mb-2 soluciones-text font-mono">Landing Pages</h3>
+                  <p className="text-xs sm:text-sm soluciones-text font-mono">Una sola página para captar clientes o mostrar tu producto.</p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
-                  <div className="text-4xl mb-4">🏢</div>
-                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Webs Corporativas</h3>
-                  <p className="text-sm soluciones-text font-mono">Sitios completos para empresas, con varias secciones.</p>
+                <div className="bg-white rounded-xl shadow p-4 sm:p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-3xl sm:text-4xl mb-4">🏢</div>
+                  <h3 className="text-base sm:text-lg font-bold mb-2 soluciones-text font-mono">Webs Corporativas</h3>
+                  <p className="text-xs sm:text-sm soluciones-text font-mono">Sitios completos para empresas, con varias secciones.</p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
-                  <div className="text-4xl mb-4">📝</div>
-                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Blogs & Contenido</h3>
-                  <p className="text-sm soluciones-text font-mono">Espacios para publicar noticias o artículos fácilmente.</p>
+                <div className="bg-white rounded-xl shadow p-4 sm:p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-3xl sm:text-4xl mb-4">📝</div>
+                  <h3 className="text-base sm:text-lg font-bold mb-2 soluciones-text font-mono">Blogs & Contenido</h3>
+                  <p className="text-xs sm:text-sm soluciones-text font-mono">Espacios para publicar noticias o artículos fácilmente.</p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
-                  <div className="text-4xl mb-4">🛍️</div>
-                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Tienda Online</h3>
-                  <p className="text-sm soluciones-text font-mono">Vende tus productos en internet, con pagos seguros.</p>
+                <div className="bg-white rounded-xl shadow p-4 sm:p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-3xl sm:text-4xl mb-4">🛍️</div>
+                  <h3 className="text-base sm:text-lg font-bold mb-2 soluciones-text font-mono">Tienda Online</h3>
+                  <p className="text-xs sm:text-sm soluciones-text font-mono">Vende tus productos en internet, con pagos seguros.</p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
-                  <div className="text-4xl mb-4">⚡</div>
-                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Aplicaciones a Medida</h3>
-                  <p className="text-sm soluciones-text font-mono">Soluciones personalizadas para necesidades especiales.</p>
+                <div className="bg-white rounded-xl shadow p-4 sm:p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-3xl sm:text-4xl mb-4">⚡</div>
+                  <h3 className="text-base sm:text-lg font-bold mb-2 soluciones-text font-mono">Aplicaciones a Medida</h3>
+                  <p className="text-xs sm:text-sm soluciones-text font-mono">Soluciones personalizadas para necesidades especiales.</p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
-                  <div className="text-4xl mb-4">🔧</div>
-                  <h3 className="text-lg font-bold mb-2 soluciones-text font-mono">Mantenimiento</h3>
-                  <p className="text-sm soluciones-text font-mono">Nos ocupamos de que tu web siempre funcione bien.</p>
+                <div className="bg-white rounded-xl shadow p-4 sm:p-6 border border-[#e5e7eb] hover:shadow-lg transition-shadow text-center">
+                  <div className="text-3xl sm:text-4xl mb-4">🔧</div>
+                  <h3 className="text-base sm:text-lg font-bold mb-2 soluciones-text font-mono">Mantenimiento</h3>
+                  <p className="text-xs sm:text-sm soluciones-text font-mono">Nos ocupamos de que tu web siempre funcione bien.</p>
               </div>
               </div>
             </div>
@@ -238,16 +238,16 @@ export default function Home() {
 
         {/* About Section */}
         <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="about">
-          <div className="container mx-auto px-6">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h1>¿Por qué elegirnos?</h1>
             </div>
-            <div className="max-w-3xl mx-auto text-center">
+            <div className="w-full max-w-4xl mx-auto text-center">
               <div>
-                <p className="text-lg soluciones-text font-mono mb-6">
+                <p className="text-base sm:text-lg soluciones-text font-mono mb-6 px-2">
                   Diseñamos páginas rápidas, seguras y que se ven bien en cualquier dispositivo. Nuestro objetivo es que consigas más clientes y que tu marca crezca.
                 </p>
-                <div className="grid sm:grid-cols-2 gap-6 mb-8 justify-items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8 justify-items-center">
                   <div className="bg-white rounded-lg border border-[#e5e7eb] p-4 shadow-sm">
                     <div className="text-2xl mb-1">🚀</div>
                     <div className="font-bold mb-1 soluciones-text font-mono">Enfoque en resultados</div>
@@ -273,17 +273,17 @@ export default function Home() {
                     <div className="text-sm soluciones-text font-mono opacity-80">enfoque en Next.js</div>
                   </div>
                 </div> */}
-                <div className="flex flex-col md:flex-row gap-8 justify-center mb-2">
-                  <div className="text-center">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center mb-2 px-4">
+                  <div className="text-center w-full sm:w-auto">
                     <Link href="#pricing">
-                      <button className="px-8 py-4 rounded-lg text-lg font-semibold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
+                      <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold vital-text border-2 border-[#3270b3] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
                         Ver Planes
                       </button>
                     </Link>
                   </div>
-                  <div className="text-center">
+                  <div className="text-center w-full sm:w-auto">
                     <Link href="#services">
-                      <button className="px-8 py-4 rounded-lg text-lg font-semibold soluciones-text border-2 border-[#424c54] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
+                      <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold soluciones-text border-2 border-[#424c54] bg-white hover:bg-[#3270b3] hover:text-white transition-colors font-mono">
                         Qué hacemos
                       </button>
                     </Link>
@@ -296,20 +296,20 @@ export default function Home() {
 
         {/* Pricing Section */}
         <section className="w-full bg-gradient-to-br from-[#eaf1fa] via-[#f5f7fa] to-[#eaf1fa] pt-16 pb-20 text-center border-b border-[#e5e7eb]" id="pricing">
-          <div className="container mx-auto px-6">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h1>🧩 Planes y Precios</h1>
-              <p className="text-xl soluciones-text font-mono">Todos nuestros planes incluyen dominio y alojamiento. Te explicamos cada paso y no hay costos ocultos.</p>
+              <p className="text-lg sm:text-xl soluciones-text font-mono px-2">Todos nuestros planes incluyen dominio y alojamiento. Te explicamos cada paso y no hay costos ocultos.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
               {/* Plan Esencial */}
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#22c55e] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
-                <div className="text-3xl mb-2">🟢</div>
-                <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Esencial</h3>
-                <div className="text-3xl font-bold mb-2 vital-text">$40 USD</div>
-                <div className="text-sm mb-4 soluciones-text">Cuota mensual: $20 USD</div>
-                <div className="text-lg mb-4 soluciones-text">Página simple para mostrar tu negocio y recibir mensajes.</div>
-                <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#22c55e] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform">
+                <div className="text-2xl sm:text-3xl mb-2">🟢</div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 soluciones-text">Plan Esencial</h3>
+                <div className="text-2xl sm:text-3xl font-bold mb-2 vital-text">$40 USD</div>
+                <div className="text-xs sm:text-sm mb-4 soluciones-text">Cuota mensual: $20 USD</div>
+                <div className="text-sm sm:text-base lg:text-lg mb-4 soluciones-text text-center">Página simple para mostrar tu negocio y recibir mensajes.</div>
+                <ul className="mb-4 text-xs sm:text-sm lg:text-base soluciones-text text-left space-y-1 sm:space-y-2 w-full">
                   <li>✓ Landing Page (una sola página)</li>
                   <li>✓ Diseño responsivo y personalizado</li>
                   <li>✓ Secciones: Inicio, Servicios, Contacto</li>
@@ -317,18 +317,18 @@ export default function Home() {
                   <li>✓ Generación estática (SSG)</li>
                   <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
-                <div className="text-sm mb-6 soluciones-text">Entrega estimada: 3-5 días</div>
-                <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#22c55e] text-[#22c55e] bg-white hover:bg-[#22c55e] hover:text-white transition-colors">Solicitar</button>
+                <div className="text-xs sm:text-sm mb-4 sm:mb-6 soluciones-text">Entrega estimada: 3-5 días</div>
+                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#22c55e] text-[#22c55e] bg-white hover:bg-[#22c55e] hover:text-white transition-colors text-sm sm:text-base">Solicitar</button>
               </div>
 
               {/* Plan Profesional */}
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#3b82f6] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
-                <div className="text-3xl mb-2">🔵</div>
-                <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Profesional</h3>
-                <div className="text-3xl font-bold mb-2 vital-text">$80 USD</div>
-                <div className="text-sm mb-4 soluciones-text">Cuota mensual: $40 USD</div>
-                <div className="text-lg mb-4 soluciones-text">Sitio completo con varias secciones y funciones extra.</div>
-                <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#3b82f6] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform">
+                <div className="text-2xl sm:text-3xl mb-2">🔵</div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 soluciones-text">Plan Profesional</h3>
+                <div className="text-2xl sm:text-3xl font-bold mb-2 vital-text">$80 USD</div>
+                <div className="text-xs sm:text-sm mb-4 soluciones-text">Cuota mensual: $40 USD</div>
+                <div className="text-sm sm:text-base lg:text-lg mb-4 soluciones-text text-center">Sitio completo con varias secciones y funciones extra.</div>
+                <ul className="mb-4 text-xs sm:text-sm lg:text-base soluciones-text text-left space-y-1 sm:space-y-2 w-full">
                   <li>✓ Sitio institucional multipágina</li>
                   <li>✓ Diseño alineado a la marca</li>
                   <li>✓ SEO básico en cada página</li>
@@ -336,18 +336,18 @@ export default function Home() {
                   <li>✓ Generación estática (SSG)</li>
                   <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
-                <div className="text-sm mb-6 soluciones-text">Entrega estimada: 7-15 días</div>
-                <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#3b82f6] text-[#3b82f6] bg-white hover:bg-[#3b82f6] hover:text-white transition-colors">Solicitar</button>
+                <div className="text-xs sm:text-sm mb-4 sm:mb-6 soluciones-text">Entrega estimada: 7-15 días</div>
+                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#3b82f6] text-[#3b82f6] bg-white hover:bg-[#3b82f6] hover:text-white transition-colors text-sm sm:text-base">Solicitar</button>
               </div>
 
               {/* Plan Contenido Dinámico */}
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#f59e0b] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
-                <div className="text-3xl mb-2">🟠</div>
-                <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Contenido Dinámico</h3>
-                <div className="text-3xl font-bold mb-2 vital-text">$120 USD</div>
-                <div className="text-sm mb-4 soluciones-text">Cuota mensual: $60 USD</div>
-                <div className="text-lg mb-4 soluciones-text">Publica artículos o noticias fácilmente.</div>
-                <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#f59e0b] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform">
+                <div className="text-2xl sm:text-3xl mb-2">🟠</div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 soluciones-text">Plan Contenido Dinámico</h3>
+                <div className="text-2xl sm:text-3xl font-bold mb-2 vital-text">$120 USD</div>
+                <div className="text-xs sm:text-sm mb-4 soluciones-text">Cuota mensual: $60 USD</div>
+                <div className="text-sm sm:text-base lg:text-lg mb-4 soluciones-text text-center">Publica artículos o noticias fácilmente.</div>
+                <ul className="mb-4 text-xs sm:text-sm lg:text-base soluciones-text text-left space-y-1 sm:space-y-2 w-full">
                   <li>✓ Blog o revista digital</li>
                   <li>✓ CMS Headless (Strapi, Sanity, etc.)</li>
                   <li>✓ Categorías, etiquetas y búsqueda interna</li>
@@ -355,18 +355,18 @@ export default function Home() {
                   <li>✓ Panel de administración</li>
                   <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
-                <div className="text-sm mb-6 soluciones-text">Entrega estimada: 15-30 días</div>
-                <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#f59e0b] text-[#b45309] bg-white hover:bg-[#f59e0b] hover:text-white transition-colors">Solicitar</button>
+                <div className="text-xs sm:text-sm mb-4 sm:mb-6 soluciones-text">Entrega estimada: 15-30 días</div>
+                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#f59e0b] text-[#b45309] bg-white hover:bg-[#f59e0b] hover:text-white transition-colors text-sm sm:text-base">Solicitar</button>
               </div>
 
               {/* Plan a Medida */}
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#ef4444] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
-                <div className="text-3xl mb-2">🔴</div>
-                <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan a Medida</h3>
-                <div className="text-3xl font-bold mb-2 vital-text">$200+ USD</div>
-                <div className="text-sm mb-4 soluciones-text">Cuota mensual: $100+ USD</div>
-                <div className="text-lg mb-4 soluciones-text">Soluciones personalizadas para ideas únicas.</div>
-                <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-[#ef4444] flex flex-col items-center p-4 sm:p-6 lg:p-8 font-mono hover:scale-105 transition-transform">
+                <div className="text-2xl sm:text-3xl mb-2">🔴</div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1 soluciones-text">Plan a Medida</h3>
+                <div className="text-2xl sm:text-3xl font-bold mb-2 vital-text">$200+ USD</div>
+                <div className="text-xs sm:text-sm mb-4 soluciones-text">Cuota mensual: $100+ USD</div>
+                <div className="text-sm sm:text-base lg:text-lg mb-4 soluciones-text text-center">Soluciones personalizadas para ideas únicas.</div>
+                <ul className="mb-4 text-xs sm:text-sm lg:text-base soluciones-text text-left space-y-1 sm:space-y-2 w-full">
                   <li>✓ SaaS, Marketplace o Dashboard</li>
                   <li>✓ Autenticación, roles y permisos</li>
                   <li>✓ Paneles de control e integración con APIs</li>
@@ -374,8 +374,8 @@ export default function Home() {
                   <li>✓ Base de datos y almacenamiento seguro</li>
                   <li>✓ <span className="font-bold text-[#3270b3]">Dominio y hosting incluidos</span></li>
                 </ul>
-                <div className="text-sm mb-6 soluciones-text">Entrega estimada: según requerimientos</div>
-                <button className="px-6 py-3 rounded-lg font-bold border-2 border-[#ef4444] text-[#ef4444] bg-white hover:bg-[#ef4444] hover:text-white transition-colors">Solicitar</button>
+                <div className="text-xs sm:text-sm mb-4 sm:mb-6 soluciones-text">Entrega estimada: según requerimientos</div>
+                <button className="w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold border-2 border-[#ef4444] text-[#ef4444] bg-white hover:bg-[#ef4444] hover:text-white transition-colors text-sm sm:text-base">Solicitar</button>
               </div>
             </div>
           </div>
