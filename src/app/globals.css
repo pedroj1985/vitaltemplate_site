@@ -245,7 +245,6 @@ a {
 }
 
 body, h1, h2, h3, h4, h5, h6, p, span, div, a, li, label, input, textarea, button {
-  color: var(--soluciones-color);
   font-family: var(--font-mono, monospace) !important;
   transition: color 0.2s;
 }
