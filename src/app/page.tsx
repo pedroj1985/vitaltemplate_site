@@ -143,28 +143,26 @@ export default function Home() {
               <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
                 <h2 className="text-2xl font-bold mb-4 soluciones-text font-mono">¿Cómo Trabajamos?</h2>
                 <p className="text-lg soluciones-text font-mono mb-6">
-                  Implementamos sitios web desde cero usando las tecnologías más modernas del mercado.
-                  Nuestro proceso incluye análisis de requerimientos, diseño personalizado, desarrollo
-                  con Next.js y TypeScript, optimización SEO, y despliegue en Vercel para máxima velocidad.
+                  Creamos tu página web desde cero, escuchando lo que necesitas y adaptando el diseño a tu gusto. Nos encargamos de todo: desde entender tu idea, hasta que tu web esté lista, rápida y visible en internet. Tú solo cuéntanos tu objetivo, nosotros lo hacemos realidad.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
                     <h3 className="text-lg font-bold mb-3 vital-text">¿Con qué herramientas trabajamos?</h3>
                     <ul className="space-y-2 soluciones-text font-mono">
-                      <li>• Usamos tecnología moderna para que tu web sea rápida y segura.</li>
-                      <li>• El diseño se adapta a celulares, tablets y computadoras.</li>
-                      <li>• Tu página estará siempre disponible y cargará en segundos.</li>
-                      <li>• Si necesitas publicar noticias o productos, te damos un panel fácil de usar.</li>
+                      <li><span className="text-[#3270b3] mr-2">✔️</span>Usamos tecnología moderna para que tu web sea rápida y segura.</li>
+                      <li><span className="text-[#3270b3] mr-2">✔️</span>El diseño se adapta a celulares, tablets y computadoras.</li>
+                      <li><span className="text-[#3270b3] mr-2">✔️</span>Tu página estará siempre disponible y cargará en segundos.</li>
+                      <li><span className="text-[#3270b3] mr-2">✔️</span>Si necesitas publicar noticias o productos, te damos un panel fácil de usar.</li>
                     </ul>
                   </div>
                   <div>
                     <h3 className="text-lg font-bold mb-3 vital-text">¿Cómo trabajamos contigo?</h3>
                     <ul className="space-y-2 soluciones-text font-mono">
-                      <li>• Hablamos contigo para entender tu idea (¡la consulta es gratis!).</li>
-                      <li>• Te mostramos un diseño antes de programar nada.</li>
-                      <li>• Te mantenemos informado durante todo el desarrollo.</li>
-                      <li>• Probamos todo para que funcione perfecto.</li>
-                      <li>• Te entregamos la web lista y te enseñamos a usarla.</li>
+                      <li><span className="text-[#3270b3] mr-2">✔️</span>Hablamos contigo para entender tu idea (¡la consulta es gratis!).</li>
+                      <li><span className="text-[#3270b3] mr-2">✔️</span>Te mostramos un diseño antes de programar nada.</li>
+                      <li><span className="text-[#3270b3] mr-2">✔️</span>Te mantenemos informado durante todo el desarrollo.</li>
+                      <li><span className="text-[#3270b3] mr-2">✔️</span>Probamos todo para que funcione perfecto.</li>
+                      <li><span className="text-[#3270b3] mr-2">✔️</span>Te entregamos la web lista y te enseñamos a usarla.</li>
                     </ul>
                   </div>
                 </div>
