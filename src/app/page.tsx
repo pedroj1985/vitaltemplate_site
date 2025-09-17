@@ -306,6 +306,8 @@ export default function Home() {
               <div className="bg-white rounded-2xl shadow-xl border-2 border-[#22c55e] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
                 <div className="text-3xl mb-2">🟢</div>
                 <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Esencial</h3>
+                <div className="text-3xl font-bold mb-2 vital-text">$40 USD</div>
+                <div className="text-sm mb-4 soluciones-text">Cuota mensual: $20 USD</div>
                 <div className="text-lg mb-4 soluciones-text">Página simple para mostrar tu negocio y recibir mensajes.</div>
                 <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
                   <li>✓ Landing Page (una sola página)</li>
@@ -323,6 +325,8 @@ export default function Home() {
               <div className="bg-white rounded-2xl shadow-xl border-2 border-[#3b82f6] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
                 <div className="text-3xl mb-2">🔵</div>
                 <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Profesional</h3>
+                <div className="text-3xl font-bold mb-2 vital-text">$80 USD</div>
+                <div className="text-sm mb-4 soluciones-text">Cuota mensual: $40 USD</div>
                 <div className="text-lg mb-4 soluciones-text">Sitio completo con varias secciones y funciones extra.</div>
                 <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
                   <li>✓ Sitio institucional multipágina</li>
@@ -340,6 +344,8 @@ export default function Home() {
               <div className="bg-white rounded-2xl shadow-xl border-2 border-[#f59e0b] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
                 <div className="text-3xl mb-2">🟠</div>
                 <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan Contenido Dinámico</h3>
+                <div className="text-3xl font-bold mb-2 vital-text">$120 USD</div>
+                <div className="text-sm mb-4 soluciones-text">Cuota mensual: $60 USD</div>
                 <div className="text-lg mb-4 soluciones-text">Publica artículos o noticias fácilmente.</div>
                 <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
                   <li>✓ Blog o revista digital</li>
@@ -357,6 +363,8 @@ export default function Home() {
               <div className="bg-white rounded-2xl shadow-xl border-2 border-[#ef4444] flex flex-col items-center p-8 font-mono hover:scale-105 transition-transform">
                 <div className="text-3xl mb-2">🔴</div>
                 <h3 className="text-2xl font-bold mb-1 soluciones-text">Plan a Medida</h3>
+                <div className="text-3xl font-bold mb-2 vital-text">$200+ USD</div>
+                <div className="text-sm mb-4 soluciones-text">Cuota mensual: $100+ USD</div>
                 <div className="text-lg mb-4 soluciones-text">Soluciones personalizadas para ideas únicas.</div>
                 <ul className="mb-4 text-base soluciones-text text-left space-y-2 w-full">
                   <li>✓ SaaS, Marketplace o Dashboard</li>
