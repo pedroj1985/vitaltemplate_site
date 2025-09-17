@@ -192,7 +192,7 @@ body {
 }
 
 main {
-  padding: 1rem 2rem !important;
+  width: 100%;
 }
 
 code, pre, .font-mono {
@@ -203,20 +203,6 @@ code, pre, .font-mono {
   border-radius: 0.3em;
   padding: 0.15em 0.4em;
   letter-spacing: 0.01em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-mono, 'Fira Code', 'JetBrains Mono', Arial, Helvetica, sans-serif);
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-
-h1 {
-  font-size: 1.50rem;
-  margin-bottom: 0.5rem;
-  color: var(--vital-color) !important;
-  text-transform: uppercase;
-  letter-spacing: 0.03em !important;
 }
 
 a {
@@ -247,6 +233,19 @@ a {
 body, h1, h2, h3, h4, h5, h6, p, span, div, a, li, label, input, textarea, button {
   font-family: var(--font-mono, monospace) !important;
   transition: color 0.2s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: 1.50rem;
+  margin-bottom: 0.5rem;
+  color: var(--vital-color) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.03em !important;
 }
 
 a:hover, .navbar-link:hover, button:hover {
