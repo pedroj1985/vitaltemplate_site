@@ -1,63 +1,82 @@
 
-# VitalSoluciones Site
+# 🧩 VitalTemplate Site
 
-Sitio web profesional desarrollado con Next.js y Tailwind CSS, pensado para mostrar servicios digitales de forma clara, moderna y atractiva para clientes no técnicos.
-
-## 🚀 ¿Qué ofrece este sitio?
-
-- Diseño visual atractivo y adaptable a cualquier dispositivo.
-- Secciones claras: Inicio, Servicios, Planes, Sobre Nosotros, Contacto.
-- Navegación fluida y experiencia de usuario optimizada.
-- Textos orientados a beneficios, fáciles de entender para cualquier cliente.
-- Ejemplo de estructura para agencias, freelancers o negocios digitales.
+Este repositorio es una plantilla base para crear sitios web modernos usando **Next.js**, **Tailwind CSS** y **TypeScript**. Está estructurado con el nuevo **App Router** de Next.js y listo para desplegar en **Vercel**.
 
 ---
 
+## 🚀 Tecnologías utilizadas
 
-## 🛠️ Cómo usar este proyecto
-
-1. Instala las dependencias:
-	```bash
-	pnpm install
-	# o npm install, yarn install, según tu gestor preferido
-	```
-
-2. Inicia el servidor de desarrollo:
-	```bash
-	pnpm dev
-	# o npm run dev, yarn dev
-	```
-
-3. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
-
-4. Edita el contenido en `src/app/page.tsx` y los componentes en `src/app/components/`.
-
----
-
-
-## 📦 Tecnologías principales
-
-- [Next.js 14](https://nextjs.org/) (App Router)
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-- Despliegue en [Vercel](https://vercel.com/)
+- [Vercel](https://vercel.com/) para despliegue
 
 ---
 
+## 📦 Instalación
 
-## ☁️ Despliegue
+```bash
+pnpm install
+```
 
-Puedes desplegar este sitio fácilmente en [Vercel](https://vercel.com/). Solo haz click en el botón "Deploy" o sigue la documentación oficial de Next.js para despliegue.
+> Asegúrate de tener `pnpm` instalado. Si no lo tienes:
+```bash
+npm install -g pnpm
+```
 
 ---
 
-## ✨ Personalización
+## 🧪 Desarrollo local
 
-- Cambia los colores y textos en `src/app/globals.css` y `src/app/page.tsx`.
-- Agrega tus propios proyectos, testimonios o secciones según tus necesidades.
+```bash
+pnpm dev
+```
+
+El sitio estará disponible en `http://localhost:3000`
 
 ---
 
-## 📧 Contacto
+## ⚙️ Personalización
 
-¿Dudas o sugerencias? ¡Contáctanos desde el formulario en el sitio!
+- Las rutas están en `src/app/`
+- Los componentes reutilizables deben ir en `src/app/components/`
+- Estilos globales en `src/app/globals.css`
+- Variables de entorno deben configurarse en `.env.local` basado en `.env.example`
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+public/               → Archivos estáticos
+src/app/              → Rutas y páginas
+src/app/components/   → Componentes reutilizables
+.env.example          → Variables de entorno de ejemplo
+next.config.ts        → Configuración de Next.js
+tailwind.config.js    → Configuración de Tailwind
+```
+
+---
+
+## ☁️ Despliegue en Vercel
+
+Este proyecto está listo para desplegar en [Vercel](https://vercel.com/):
+
+1. Crea una cuenta en Vercel
+2. Importa este repositorio
+3. Configura las variables de entorno
+4. ¡Despliega!
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Puedes usarlo libremente.
+
+---
+
+## ✨ Créditos
+
+Creado por [@pedroj1985](https://github.com/pedroj1985)
