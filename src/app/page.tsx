@@ -1,11 +1,29 @@
 
 'use client';
-import Link from "next/link";
-import React, { useState } from "react";
 
+import Link from "next/link";
+import { useState } from 'react';
+/* import { ServiceModal } from './components/ServiceModal';
+
+async function getData() {
+  // Aquí puedes hacer fetch de datos si los necesitas
+  return {
+    servicios: [
+      {
+        emoji: "🚀",
+        titulo: "Landing Pages",
+        descripcion: "Una sola página para captar clientes o mostrar tu producto."
+      },
+      // ... más servicios
+    ]
+  };
+}
+ */
 export default function Home() {
   const [modalKey, setModalKey] = useState<string | null>(null);
+
   const closeModal = () => setModalKey(null);
+  const openModal = (key: string) => setModalKey(key);
   return (
     <div className="bg-background text-foreground min-h-screen flex flex-col w-full">
       {/* Main Content */}

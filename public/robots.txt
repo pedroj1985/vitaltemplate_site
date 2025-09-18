@@ -1,0 +1,14 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vitalsolutions.vercel.app/sitemap.xml
+
+# Prevent crawlers from scanning API routes
+Disallow: /api/
+
+# Common directories that should not be indexed
+Disallow: /_next/
+Disallow: /404
+Disallow: /500
